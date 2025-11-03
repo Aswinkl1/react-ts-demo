@@ -3,6 +3,7 @@ import { Child } from "./components/Child";
 import Greet from "./components/Greet";
 import { Heading } from "./components/Heading";
 import Person from "./components/person";
+import Union from "./components/Union";
 
 let name = {
   first: "Aswin",
@@ -20,6 +21,8 @@ function App() {
       <Child>
         <Heading>hello bro </Heading>
       </Child>
+
+      <Union status="loading" />
     </>
   );
 }
