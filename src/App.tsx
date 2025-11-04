@@ -1,10 +1,11 @@
 import "./App.css";
 import { Child } from "./components/Child";
+import Events from "./components/Event";
 import Greet from "./components/Greet";
 import { Heading } from "./components/Heading";
 import Person from "./components/person";
 import Union from "./components/Union";
-
+import TypeForCss from "./components/typeForCss";
 let name = {
   first: "Aswin",
   last: "K L",
@@ -23,6 +24,10 @@ function App() {
       </Child>
 
       <Union status="loading" />
+
+      {/* <Events  /> pass the handles to it  */}
+
+      <TypeForCss styles={{ color: "gray" }} />
     </>
   );
 }
