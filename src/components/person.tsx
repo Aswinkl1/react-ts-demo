@@ -1,30 +1,20 @@
-type personType = {
-  name: {
-    first: String;
-    last: String;
-  };
-  age: number;
-  isLogedIn: boolean;
-  hobbies: String[];
-};
-
-const Person = (prob: personType) => {
+import type { Person } from "./person";
+const person = ({ name, isLogedIn, hobbies, age }: Person) => {
   return (
     <>
-      {prob.isLogedIn ? (
+      {isLogedIn ? (
         <h1>
-          My name is {prob.name.first} {prob.name.last} and i am {prob.age}{" "}
-          years old
+          My name is {name.first} {name.last} and i am {age} years old
         </h1>
       ) : (
         <h1>user logout</h1>
       )}
 
-      {prob.hobbies.map((hob, i) => {
+      {hobbies.map((hob, i) => {
         return <h1 key={i}>{hob}</h1>;
       })}
     </>
   );
 };
 
-export default Person;
+export default person;

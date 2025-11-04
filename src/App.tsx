@@ -3,7 +3,7 @@ import { Child } from "./components/Child";
 import Events from "./components/Event";
 import Greet from "./components/Greet";
 import { Heading } from "./components/Heading";
-import Person from "./components/person";
+import Person from "./components/person.tsx";
 import Union from "./components/Union";
 import TypeForCss from "./components/typeForCss";
 let name = {
